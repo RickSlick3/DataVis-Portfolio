@@ -3,28 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Data Vis Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            background-color: #121212;
+            color: #E0E0E0;
+        }
+
+        .left-column {
+            width: 30%;
+            background-color: #1E1E1E;
+            padding: 20px;
+            box-sizing: border-box;
+            border-right: 1px solid #333333;
+        }
+
+        .left-column h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #F1623f;
+        }
+
+        .left-column p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #E0E0E0;
+        }
+
+        .left-column a {
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #D84040;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        .left-column a:hover {
+            color: #F1623f;
+        }
+
+        .right-column {
+            width: 70%;
+            overflow-y: auto;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #121212;
+        }
+
+        .project-section {
+            margin-bottom: 40px;
+        }
+
+        .project-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #D84040;
+        }
+
+        .project-box {
+            border: 1px solid #333333;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #1E1E1E;
+            color: #E0E0E0;
+        }
+
+        .project-box h3 {
+            margin: 0 0 10px;
+            font-size: 1.2em;
+            color: #E0E0E0;
+        }
+
+        .project-box p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        /* Ensure columns stay fixed */
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="title">
-        <h1>Welcome to My Portfolio</h1>
+    <div class="left-column">
+        <h1>Data Visualization Portfolio</h1>
         <p>Discover my projects for the <strong>Interactive Visual Interfaces for Data Science</strong> class.</p>
+        <a href="#about">About Me</a>
+        <a href="#projects">Data Visualization Projects</a>
     </div>
 
-    <footer>
-        <p>&copy; 2025 Software Engineer Portfolio. All rights reserved.</p>
-    </footer>
+    <div class="right-column">
+        <section id="about" class="project-section">
+            <h2>About Me</h2>
+            <p>Welcome to My Portfolio... More information about me, this class, and my upcoming projects coming soon!</p>
+        </section>
 
-    <script src="script.js"></script>
+        <section id="projects" class="project-section">
+            <h2>Data Visualization Projects</h2>
+            <p>See the list of projects here:</p>
+            <div class="project-box">
+                <h3>Project A</h3>
+                <p>Coming soon... &#128679</p>
+            </div>
+            <div class="project-box">
+                <h3>Project B</h3>
+                <p>Coming soon... &#128679</p>
+            </div>
+            <div class="project-box">
+                <h3>Project C</h3>
+                <p>Coming soon... &#128679</p>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
