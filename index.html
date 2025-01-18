@@ -16,10 +16,11 @@
 
         .left-column {
             width: 30%;
-            background-color: #1E1E1E;
+            /* background-color: #1E1E1E; */
             padding: 20px;
             box-sizing: border-box;
-            border-right: 1px solid #333333;
+            /* border-right: 1px solid #333333; */
+            min-width: 440px;
         }
 
         .left-column h1 {
@@ -45,6 +46,15 @@
 
         .left-column a:hover {
             color: #F1623f;
+        }
+
+        .bio {
+            max-width: 440px;
+        }
+
+        .flex-box {
+            display: flex;
+            gap: 15px;
         }
 
         .right-column {
@@ -90,14 +100,57 @@
             height: 100%;
             overflow: hidden;
         }
+
+        h1, h2, .headshot {
+            margin-top: 25px;
+        }
+
+        .headshot {
+            width: 105px;
+            height: 105px;
+            border-radius: 100px;
+            border: 3px solid #ffffff;
+        }
+
+        .logo {
+            height: 60px; /* Adjust size */
+            width: auto;
+            transition: transform 0.3s; /* Add hover effect */
+        }
+
+        .logo:hover {
+            transform: scale(1.1); /* Slightly enlarge on hover */
+        }
+
+        .logo-container {
+            display: flex;
+            margin: 50px;
+            justify-content: center;
+            gap: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="left-column">
-        <h1>Data Visualization Portfolio</h1>
-        <p>Discover my projects for the <strong>Interactive Visual Interfaces for Data Science</strong> class.</p>
+        <div class="flex-box">
+            <img class="headshot" src="composite_2024.png" alt="Headshot">
+            <h1 class="title">Ricky Roberts' <br>Data Visualization <br>Portfolio</h1>
+        </div>
+        <p class="bio">Discover my projects for the <strong>Interactive Visual Interfaces for Data Science</strong> class.</p>
         <a href="#about">About Me</a>
         <a href="#projects">Data Visualization Projects</a>
+
+        <div class="logo-container">
+            <a href="https://github.com/RickSlick3/DataVis-Portfolio/blob/main/RichardRoberts_Resume.pdf" target="_blank">
+                <img src="resume-png.png" alt="Resume Logo" class="resume-logo logo">
+            </a>
+            <a href="https://github.com/RickSlick3" target="_blank">
+                <img src="github-mark-white.png" alt="GitHub Logo" class="github-logo logo">
+            </a>
+            <a href="https://www.linkedin.com/in/roberts-richard/" target="_blank">
+                <img src="LI-In-Bug.png" alt="LinkedIn Logo" class="linkedin-logo logo">
+            </a>
+        </div>
     </div>
 
     <div class="right-column">
@@ -110,15 +163,15 @@
             <h2>Data Visualization Projects</h2>
             <p>See the list of projects here:</p>
             <div class="project-box">
-                <h3>Project A</h3>
+                <h3>Project 1</h3>
                 <p>Coming soon... &#128679</p>
             </div>
             <div class="project-box">
-                <h3>Project B</h3>
+                <h3>Project 2</h3>
                 <p>Coming soon... &#128679</p>
             </div>
             <div class="project-box">
-                <h3>Project C</h3>
+                <h3>Project 3</h3>
                 <p>Coming soon... &#128679</p>
             </div>
         </section>
